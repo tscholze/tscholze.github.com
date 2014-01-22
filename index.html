@@ -6,63 +6,38 @@
     <meta name="description" content="Github landing page, Tobias Scholze">
     <meta name="author" content="Tobias Scholze">
 
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <style>
-        body
-        {
-        padding-top: 50px;
-        padding-bottom: 20px;
-        }
-
-        .logo
-        {
-        border: 1px solid black;
-        box-shadow: 0 1px 0 red;
-        }
-
-        header p
-        {
-        margin: 0;
-        }
-
-    </style>
-
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="screen.css" rel="stylesheet" />
+	
     <title>Tobias Scholze</title>
 </head>
 
 <body>
-<div id="wrap">
-    <div class="container">
-        <header>
-            <center>
-                <img class="logo img-circle"
-                     src="panda.png"
-                     title="Panda (c) Adam Lowe" alt="Panda Logo"/>
+	<div id="content-wrapper">
+		<header>
+			<img class="logo img-circle" src="panda.png" title="Panda (c) Adam Lowe" alt="Panda Logo"/>
+			<h1>
+				<p>Tobias Scholze</p>
+				<p><small>They see me mowing, they see me coding</small></p>
+	       	</h1>
+		</header>
+		
+		<hr />
+		
+		<content>
+			<ul>
+				<li><a href="https://github.com/tscholze"><i class="fa fa-github-alt fa-2x"></i></a></li>
+				<li><a href="https://twitter.com/tobonaut"><i class="fa fa-twitter fa-2x"></i></li>
+		</content>
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<p>Avatar: <a href="http://openclipart.org">openclipart.org</a>. I used <a href="http://getbootstrap.com">Bootstrap</a> to draw the circle.</p>
+	</footer>
 
-                <h1><p>Tobias Scholze</p>
-
-                    <p>
-                        <small>They see me mowing, they see me coding</small>
-                    </p>
-                </h1>
-            </center>
-        </header>
-
-        <hr/>
-
-    </div>
-</div>
-
-<!-- Footer -->
-<div class="navbar navbar-fixed-bottom" id="footer">
-    <div class="container">
-        <p class="text-muted credit navbar-footer navbar-text pull-right">Avatar: <a href="http://openclipart.org">openclipart.org</a>.
-            I used <a href="http://getbootstrap.com">Bootstrap</a> to build this site.</p>
-    </div>
-</div>
-
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

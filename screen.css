@@ -1,0 +1,82 @@
+body
+{
+	padding-top: 150px;
+	background: #c0c0c0;
+}
+
+header, footer, content
+{
+	text-align:center;
+}
+
+header p
+{
+	margin: 0;
+}
+
+content
+{
+	font-size: 0.75em;
+}
+
+content h2
+{
+	font-size: 1.0em;
+}
+
+content ul li
+{
+	list-style: none;
+	display: inline;
+	padding-right: 5px;
+}
+
+content ul li:last-child:
+{
+	padding-right: 0px;
+}
+
+content ul li i
+{
+	color: #888888;
+	margin-right: 5px;
+}
+
+footer
+{
+	margin-top: 15px;
+	font-size: 0.75em;
+	color: #dadada;
+}
+
+footer a
+{
+	color: inherit;
+}
+
+h1 p
+{
+	font-size: 0.7em;
+}
+
+h1 p small
+{
+	font-size: 0.5em;
+}
+
+.logo
+{
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+}
+
+#content-wrapper
+{
+	background: white;
+	width: 400px;
+	margin: auto;
+	padding: 15px;
+	box-shadow: 10px 10px 5px #888888;
+	border: #bababa 1px solid;
+}
