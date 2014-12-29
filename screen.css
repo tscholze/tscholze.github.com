@@ -1,6 +1,10 @@
+html, body
+{
+	height: 100%;
+}
+
 body
 {
-	padding-top: 150px;
 	background: #c0c0c0;
 }
 
@@ -44,6 +48,7 @@ content ul li i
 
 footer
 {
+	height: 50px;
 	margin-top: 15px;
 	font-size: 0.75em;
 	color: #dadada;
@@ -71,7 +76,7 @@ h1 p small
 	height: 100px;
 }
 
-#content-wrapper
+.vcard
 {
 	background: white;
 	width: 400px;
@@ -81,7 +86,24 @@ h1 p small
 	border: #bababa 1px solid;
 }
 
-.fa:hover 
+#content-wrapper
+{
+	padding-top: 5%;
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -50px;
+}
+
+#content-wrapper:after {
+	content: "";
+	display: block;
+}
+
+footer, #content-wrapper:after {
+	height: 50px;
+}
+
+.fa:hover
 {
 	color: #509600;
 }
