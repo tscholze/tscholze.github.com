@@ -71,7 +71,7 @@ h1 p small
 
 .logo
 {
-	border: 1px solid black;
+	border: 1px solid #000000;
 	width: 100px;
 	height: 100px;
 }
@@ -90,7 +90,6 @@ h1 p small
 {
 	padding-top: 5%;
 	min-height: 100%;
-	/* equal to footer height */
 	margin-bottom: -50px;
 }
 
@@ -106,4 +105,5 @@ footer, #content-wrapper:after {
 .fa:hover
 {
 	color: #509600;
+	text-shadow: 1px 1px 1px #bababa;
 }
