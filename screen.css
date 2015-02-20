@@ -1,11 +1,14 @@
+/* External imports */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300);
+
+/* Global styles */
+
 html, body
 {
 	height: 100%;
-}
-
-body
-{
 	background: #c0c0c0;
+	font-family: 'Open Sans', sans-serif;
 }
 
 header, footer, content
@@ -13,37 +16,35 @@ header, footer, content
 	text-align:center;
 }
 
-header p
+h1, p
 {
-	margin: 0;
+	margin: 0px;
+	padding: 0px;
+}
+
+header img
+{
+	border: 1px solid #000000;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
 }
 
 content
 {
-	font-size: 0.75em;
-}
-
-content h2
-{
-	font-size: 1.0em;
+	font-size: 0.75rem;
 }
 
 content ul li
 {
 	list-style: none;
 	display: inline;
-	padding-right: 5px;
+	padding-right: 10px;
 }
 
 content ul li:last-child:
 {
 	padding-right: 0px;
-}
-
-content ul li i
-{
-	color: #888888;
-	margin-right: 5px;
 }
 
 footer
@@ -59,36 +60,17 @@ footer a
 	color: inherit;
 }
 
-h1 p
-{
-	font-size: 0.7em;
-}
-
-.logo
-{
-	border: 1px solid #000000;
-	width: 100px;
-	height: 100px;
-}
-
-.fa:hover
-{
-	color: #509600;
-	text-shadow: 1px 1px 1px #bababa;
-}
+/* Custom classes */
 
 .quote
 {
 	width: 75%;
 	margin: 0 auto;
 	padding: 5px;
-}
-
-.quote p
-{
 	font-style: italic;
-	font-size: 1rem;
+	font-size: 0.75rem;
 	color:  #888888;
+	font-weight: 300;
 }	
 
 .vcard
@@ -97,24 +79,20 @@ h1 p
 	width: 400px;
 	margin: auto;
 	padding: 15px;
-	box-shadow: 10px 10px 5px #888888;
-	border: #bababa 1px solid;
+	margin-top: 25px;
+	box-shadow: 10px 10px 5px #aaa;
+	border: #aaa 1px solid;
 }
 
-#content-wrapper
+/* Overriding font-awesome styles */
+
+.fa
 {
-	padding-top: 5%;
-	min-height: 100%;
-	margin-bottom: -50px;
+	color: #888888;
 }
 
-#content-wrapper:after 
+.fa:hover
 {
-	content: "";
-	display: block;
-}
-
-footer, #content-wrapper:after 
-{
-	height: 50px;
+	color: #509600;
+	text-shadow: 1px 1px 1px #bababa;
 }
