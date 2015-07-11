@@ -62,6 +62,13 @@ content
 	font-size: 0.75rem;
 }
 
+content p
+{
+	text-align:justify;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 footer
 {
 	height: 50px;
