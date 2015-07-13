@@ -69,6 +69,11 @@ content p
 	padding-right: 10px;
 }
 
+content ul li img
+{
+	height: 150px;
+}
+
 footer
 {
 	height: 50px;
@@ -88,6 +93,11 @@ footer a
 }
 
 /* Custom classes */
+
+content ul li img .small
+{
+	height: 75px;
+}
 
 .quote
 {
