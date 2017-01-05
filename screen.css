@@ -13,7 +13,7 @@ html, body
 
 header, footer, content
 {
-	text-align:center;
+	text-align: center;
 }
 
 h1, h2, ul, p
@@ -114,7 +114,7 @@ content ul li img .small
 .card
 {
 	background: #ffffff;
-	width: 400px;
+	width: 360px;
 	margin: auto;
 	padding: 15px;
 	margin-top: 25px;
