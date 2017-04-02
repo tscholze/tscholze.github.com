@@ -1,0 +1,36 @@
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+.header,
+.footer {
+    color: #EEEEE3;
+    background-color: #222222;
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.75em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header a:active,
+.footer a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100%;
+    margin: 0px auto;
+    margin-bottom: -20px; 
+}
+
+.container::after {
+    content: "";
+    display: block;
+    height: 20px;
+}
