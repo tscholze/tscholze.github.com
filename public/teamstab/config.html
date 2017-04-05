@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>WINsider Community Deutschland</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://statics.teams.microsoft.com/sdk/v0.4/js/MicrosoftTeams.min.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        microsoftTeams.initialize();
+        microsoftTeams.settings.registerOnSaveHandler(function (saveEvent) {
+
+            microsoftTeams.settings.setSettings({
+                entityId: "WINsider",
+                contentUrl: "http://tscholze.github.io/public/teamstab/tab.html",
+                suggestedDisplayName: "WINsider",
+                websiteUrl: "http://windowscommunity.de",
+                removeUrl: "http://tscholze.github.io/public/teamstab/remove.html",
+            });
+
+            saveEvent.notifySuccess();
+        });
+
+        microsoftTeams.settings.setValidityState(true);
+    </script>
+
+    <!-- Header -->
+    <div class="header">
+        <p>
+            Microsoft Teams Tab f&uuml;r die <a href="http://windowscommunity.de" target="_blank" title="windowscommunity.de">Windows Insider Community Deutschland</a>.
+        </p>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+        <h1>Configuration</h1>
+
+        <p>At the moment, there is no custom configuration available.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>
+            Gemacht mit ❤️, <a href="http://jquery.com" target="_blank" title="jQuery" alt="skeleton">jQuery</a> and <a href="http://getskeleton.com"
+                target="_blank" alt="skeleton" title="skeleton">skeleton</a>.
+        </p>
+    </div>
+
+    <script>
+        </body>
+            < /html>

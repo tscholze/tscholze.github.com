@@ -1,0 +1,35 @@
+{
+  "$schema": "https://statics.teams.microsoft.com/sdk/v0.4/manifest/MicrosoftTeams.schema.json",
+  "manifestVersion": "0.4",
+  "id": "32bec395-ff98-4549-8ec3-ee548ff2f431",
+  "version": "1.0",
+  "name": "WINSider Community Deutschland",
+  "developer": {
+      "name": "WINSider Community Deutschland <tscholze>",   
+      "websiteUrl": "https://windowscommunity.de",
+      "privacyUrl": "http://windowscommunity.de/de/impressum/",
+      "termsOfUseUrl": "http://windowscommunity.de/de/impressum/"
+  },
+  "tabs" : [{
+    "id": "32bec395-ff98-4549-8ec3-ee548ff2f431",
+    "name": "WINSider Community Deutschland",
+    "description" : {
+      "short": "Blog post list as a tab",
+      "full": "Summarizes the windowscommunity.de blog posts as a clickable list."
+    },
+    "icons": {
+      "44": "icon-44.png",
+      "88": "icon-88.png"
+    },
+    "accentColor" : "#37A3CF",
+    "configUrl": "http://tscholze.github.io/public/teamstab/config.html",
+    "canUpdateConfig": true
+  }],
+  "needsIdentity": false,
+  "validDomains": [
+      "*.github.io",
+      "*.github.com",
+      "*.googleapis.com",
+      "*.microsoft.com"
+  ]
+}
