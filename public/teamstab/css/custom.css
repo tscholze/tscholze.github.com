@@ -17,9 +17,15 @@
     vertical-align: middle;
 }
 
+.header a,
+.footer a,
 .header a:active,
-.footer a:active {
-    color: inherit;
+.footer a:active,
+.header a:hover,
+.footer a:hover,
+.header a:visited,
+.footer a:visited {
+    color: #37A3CF;
     text-decoration: none;
 }
 
@@ -33,4 +39,8 @@
     content: "";
     display: block;
     height: 20px;
+}
+
+.feed {
+    width: 50%;
 }

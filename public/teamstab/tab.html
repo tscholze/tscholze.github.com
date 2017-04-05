@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="utf-8">
-    <title>Your page title here :)</title>
+    <title>WINsider Community Deutschland</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <script>
         /**
         * On document ready, load the feed
@@ -31,46 +30,83 @@
         * Loads the feed, renders it with html entities
         * and insert it into the html dom 
         */
-        function loadFeed() {
-            $.ajax({
-                url: "https://windowscommunity.de/de/feed",
-                dataType: "xml",
-                success: function (data) {
+        function loadFeed() 
+        {
+            var url = "https://windowscommunity.de/de/feed";
+            var xhr = createCORSRequest("GET", "https://api.rss2json.com/v1/api.json?rss_url=" + url);
 
-                    var $xml = $(data), items = [];
+            if (xhr) 
+            {
+                xhr.send();
+            }
 
-                    $xml.find("item").each(function (i) {
-                        var $this = $(this);
-                        const title = $this.find("title").text();
-
-                        items.push('<a class="feed-entry" href="#">' + title + '</a><hr />');
-                    });
-
-                    $(".feed").html(items.join(''));
+            xhr.onreadystatechange = function () 
+            {
+                if (xhr.readyState != 4 || xhr.status != 200) {
+                    return;
                 }
-            })
+
+                var responseText    = xhr.responseText;
+                var result          = JSON.parse(responseText);
+                var entries         = result["items"];
+                var htmlEntries     = [];
+
+                for (var i = 0; i < entries.length; i++) 
+                {
+                    htmlEntries.push('<a class="feed-entry" href="' + entries[i]["link"] + '" target="_blank">' + entries[i]["title"] + '</a><hr />');
+                }
+
+                $(".feed").html(htmlEntries.join(''));
+            }
+        }
+
+        /**
+        * Creates an CORS-able http XDomainRequest
+        */
+        function createCORSRequest(method, url) 
+        {
+            var xhr = new XMLHttpRequest();
+
+            if ("withCredentials" in xhr) 
+            {
+                xhr.open(method, url, true);
+            }
+            else if (typeof XDomainRequest != "undefined") 
+            {
+                xhr = new XDomainRequest();
+                xhr.open(method, url);
+            }
+            else 
+            {
+                xhr = null;
+            }
+
+            return xhr;
         }
     </script>
 
     <!-- Header -->
     <div class="header">
         <p>
-            Microsoft Teams Tab for the <a href="http://windowscommunity.de" title="windowscommunity.de">German Windows Insider Community</a>
+            Microsoft Teams Tab f&uumml;r die <a href="http://windowscommunity.de" target="_blank" title="windowscommunity.de">Windows Insider Community Deutschland</a>.
         </p>
     </div>
 
     <!-- Content -->
     <div class="container">
-        <h1>#communityrocks</h1>
+        <h1>#WINsider</h1>
         <div class="feed">
 
         </div>
+
+        <p>... und niemals vergessen: #communityrocks</p>
     </div>
 
     <!-- Footer -->
     <div class="footer">
         <p>
-            Made with ❤️, <a href="http://jquery.com" title="jQuery" alt="skeleton">jQuery</a> and <a href="http://getskeleton.com" alt="skeleton" title="skeleton">skeleton</a>.
+            Gemacht mit ❤️, <a href="http://jquery.com" target="_blank" title="jQuery" alt="skeleton">jQuery</a> and <a href="http://getskeleton.com"
+                target="_blank" alt="skeleton" title="skeleton">skeleton</a>.
         </p>
     </div>
 </body>
