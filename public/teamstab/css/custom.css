@@ -32,6 +32,7 @@
 .container {
     min-height: 100%;
     margin: 0px auto;
+    margin-top: 50px;
     margin-bottom: -20px; 
 }
 
@@ -43,4 +44,8 @@
 
 .feed {
     width: 50%;
+}
+
+.error {
+    color: #ff0000;
 }
