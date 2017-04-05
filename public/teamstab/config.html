@@ -31,14 +31,20 @@
                 removeUrl: "https://tscholze.github.io/public/teamstab/remove.html"
             });
 
+            microsoftTeams.settings.setValidityState(true);
             saveEvent.notifySuccess();
         });
+
+        function onClick() 
+        {
+            microsoftTeams.settings.setValidityState(true);
+        }
     </script>
 
     <!-- Content -->
     <div class="container">
         <p>At the moment, there is no custom configuration available.</p>
-        <button onclick="onClick();">save</button>
+        <button onclick="onClick()">save</button>
     </div>
 
     <!-- Footer -->
