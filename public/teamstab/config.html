@@ -25,30 +25,20 @@
 
             microsoftTeams.settings.setSettings({
                 entityId: "WINsider",
-                contentUrl: "http://tscholze.github.io/public/teamstab/tab.html",
+                contentUrl: "https://tscholze.github.io/public/teamstab/tab.html",
                 suggestedDisplayName: "WINsider",
-                websiteUrl: "http://windowscommunity.de",
-                removeUrl: "http://tscholze.github.io/public/teamstab/remove.html",
+                websiteUrl: "https://www.windowscommunity.de",
+                removeUrl: "https://tscholze.github.io/public/teamstab/remove.html"
             });
 
             saveEvent.notifySuccess();
         });
-
-        microsoftTeams.settings.setValidityState(true);
     </script>
-
-    <!-- Header -->
-    <div class="header">
-        <p>
-            Microsoft Teams Tab f&uuml;r die <a href="http://windowscommunity.de" target="_blank" title="windowscommunity.de">Windows Insider Community Deutschland</a>.
-        </p>
-    </div>
 
     <!-- Content -->
     <div class="container">
-        <h1>Configuration</h1>
-
         <p>At the moment, there is no custom configuration available.</p>
+        <button onclick="onClick();">save</button>
     </div>
 
     <!-- Footer -->
@@ -58,7 +48,5 @@
                 target="_blank" alt="skeleton" title="skeleton">skeleton</a>.
         </p>
     </div>
-
-    <script>
-        </body>
-            < /html>
+</body>
+</html>
