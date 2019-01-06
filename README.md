@@ -16,8 +16,8 @@ Just me, [Tobi]([https://tscholze.github.io).
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 Dependencies or assets maybe licensed differently.
-## Acknowledgments
 
+## Acknowledgments
 - [Microsoft Office Fabric](https://developer.microsoft.com/en-us/fabric)
 - [Font Awesome Icons](http://fontawesome.io)
 
