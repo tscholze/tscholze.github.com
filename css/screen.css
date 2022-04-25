@@ -45,9 +45,15 @@ li
 	margin-right: 10px;
 }
 
+a 
+{
+	font-weight: bold;
+	color: #034509;
+}
+
 a:hover
 {
-	font-weight: 600;
+	text-decoration: underline;
 }
 
 li:last-child
@@ -129,13 +135,13 @@ content ul li img .small
 
 /* Overriding font-awesome styles */
 
-.fa
+.fab
 {
 	color: #888888;
 }
 
-.fa:hover
+.fab:hover
 {
-	color: #888888;
+	color: #034509;
 	text-shadow: 1px 1px 1px #888888;
 }
